@@ -2,14 +2,11 @@ name: dotnet-build
 
 on:
   push:
-    branches:
-      - "test/**"
-      - "feat/**"
-      - "fix/**"
     paths:
       - "**/*.cs"
       - "**/*.csproj"
       - "**/*.sln"
+  workflow_dispatch:
 
 jobs:
   dotnet-build:
